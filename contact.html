@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - David Levy</title>
+  <style>
+    /* Same base styles as index.html */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      font-family: 'Courier New', Courier, monospace;
+      color: #eee;
+      background-color: #001f3f;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: "1010011100100110011010111001010110100101010010101100101010110 1100101001011010110010101101001010101001010110010101101010110";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.07);
+      white-space: pre-wrap;
+      overflow-wrap: break-word;
+      pointer-events: none;
+      user-select: none;
+      line-height: 1.3em;
+      letter-spacing: 0.1em;
+      padding: 20px;
+      z-index: 0;
+    }
+    nav {
+      background-color: rgba(0, 31, 63, 0.9);
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      font-weight: bold;
+    }
+    nav ul li {
+      position: relative;
+    }
+    nav a {
+      color: #eee;
+      text-decoration: none;
+      font-family: 'Courier New', Courier, monospace;
+      transition: color 0.3s;
+    }
+    nav a:hover,
+    nav a:focus {
+      color: #00ffff;
+      outline: none;
+    }
+    nav ul li.products:hover > ul,
+    nav ul li.products:focus-within > ul {
+      display: block;
+    }
+    nav ul ul {
+      display: none;
+      position: absolute;
+      top: 2rem;
+      left: 0;
+      background-color: #003366;
+      border-radius: 4px;
+      padding: 0.5rem 0;
+      min-width: 180px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      z-index: 20;
+    }
+    nav ul ul li {
+      padding: 0;
+    }
+    nav ul ul li a {
+      display: block;
+      padding: 0.5rem 1rem;
+      white-space: nowrap;
+      font-weight: normal;
+    }
+    nav ul ul li a:hover,
+    nav ul ul li a:focus {
+      background-color: #005599;
+      color: #00ffff;
+    }
+    main {
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+      position: relative;
+      z-index: 1;
+      color: #ccc;
+      letter-spacing: 0.05em;
+      line-height: 1.6;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      letter-spacing: 0.15em;
+      color: #00ffff;
+      text-shadow: 0 0 5px #00ffff;
+      text-align: center;
+    }
+    strong.section-title {
+      display: block;
+      font-size: 1.3rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      color: #aad8e6;
+      letter-spacing: 0.1em;
+    }
+    p {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+    a.install-link {
+      color: #00ffff;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    a.install-link:hover,
+    a.install-link:focus {
+      color: #66ffff;
+      outline: none;
+    }
+    @media (max-width: 600px) {
+      main {
+        margin: 3rem 1rem;
+        padding: 0 1rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      strong.section-title {
+        font-size: 1.1rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="https://levyd01.online/index.html">Home</a></li>
+      <li class="products" tabindex="0">
+        <a href="#">Products ▾</a>
+        <ul>
+          <li><a href="https://levyd01.online/dividend_comparison.html">Dividend Comparison</a></li>
+          <li><a href="https://levyd01.online/macd.html">MACD</a></li>
+        </ul>
+      </li>
+      <li><a href="https://levyd01.online/contact.html">Contact</a></li>
+      <li><a href="https://levyd01.online/terms-of-service.html">Terms of Service</a></li>
+      <li><a href="https://levyd01.online/privacy-policy.html">Privacy Policy</a></li>
+    </ul>
+  </nav>
+    <div class="contact-container">
+        <h1>Contact</h1>
+        <p><strong>Name:</strong> David Levy</p>
+        <p><strong>Email:</strong> <a href="mailto:levyd01.addons@gmail.com">levyd01.addons@gmail.com</a></p>
+    </div>
+<footer style="text-align:center; padding: 1rem; color:#888; font-size: 0.9rem;">
+  <p>&copy; 2025 LevyD01. All rights reserved.</p>
+  <p>
+	<a href="https://levyd01.online/privacy-policy.html" style="color:#888;">Privacy Policy</a> | 
+    <a href="https://levyd01.online/terms-of-service.html" style="color:#888;">Terms of Service</a>
+  </p>
+</footer>
+</body>
+</html>
