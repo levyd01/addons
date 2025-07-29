@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stocks Fundamentals Comparison - Financial Add Ons</title>
+  <style>
+    /* Same base styles as index.html */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      font-family: 'Courier New', Courier, monospace;
+      color: #eee;
+      background-color: #001f3f;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: "1010011100100110011010111001010110100101010010101100101010110 1100101001011010110010101101001010101001010110010101101010110";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.07);
+      white-space: pre-wrap;
+      overflow-wrap: break-word;
+      pointer-events: none;
+      user-select: none;
+      line-height: 1.3em;
+      letter-spacing: 0.1em;
+      padding: 20px;
+      z-index: 0;
+    }
+    nav {
+      background-color: rgba(0, 31, 63, 0.9);
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      font-weight: bold;
+    }
+    nav ul li {
+      position: relative;
+    }
+    nav a {
+      color: #eee;
+      text-decoration: none;
+      font-family: 'Courier New', Courier, monospace;
+      transition: color 0.3s;
+    }
+    nav a:hover,
+    nav a:focus {
+      color: #00ffff;
+      outline: none;
+    }
+    nav ul li.products:hover > ul,
+    nav ul li.products:focus-within > ul {
+      display: block;
+    }
+    nav ul ul {
+      display: none;
+      position: absolute;
+      top: 2rem;
+      left: 0;
+      background-color: #003366;
+      border-radius: 4px;
+      padding: 0.5rem 0;
+      min-width: 180px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      z-index: 20;
+    }
+    nav ul ul li {
+      padding: 0;
+    }
+    nav ul ul li a {
+      display: block;
+      padding: 0.5rem 1rem;
+      white-space: nowrap;
+      font-weight: normal;
+    }
+    nav ul ul li a:hover,
+    nav ul ul li a:focus {
+      background-color: #005599;
+      color: #00ffff;
+    }
+    main {
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+      position: relative;
+      z-index: 1;
+      color: #ccc;
+      letter-spacing: 0.05em;
+      line-height: 1.6;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      letter-spacing: 0.15em;
+      color: #00ffff;
+      text-shadow: 0 0 5px #00ffff;
+      text-align: center;
+    }
+    strong.section-title {
+      display: block;
+      font-size: 1.3rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      color: #aad8e6;
+      letter-spacing: 0.1em;
+    }
+    p {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+    a.install-link {
+      color: #00ffff;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    a.install-link:hover,
+    a.install-link:focus {
+      color: #66ffff;
+      outline: none;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      main {
+        margin: 3rem 1rem;
+        padding: 0 1rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      strong.section-title {
+        font-size: 1.1rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="https://levyd01.online/index.html">Home</a></li>
+      <li class="products" tabindex="0">
+        <a href="#">Products ▾</a>
+        <ul>
+          <li><a href="https://levyd01.online/dividend_comparison.html">Dividend Comparison</a></li>
+          <li><a href="https://levyd01.online/macd.html">MACD</a></li>
+          <li><a href="https://levyd01.online/fundamentals_comparison.html">Fundamentals Comparison</a></li>
+        </ul>
+      </li>
+      <li><a href="https://levyd01.online/contact.html">Contact</a></li>
+      <li><a href="https://levyd01.online/terms-of-service.html">Terms of Service</a></li>
+      <li><a href="https://levyd01.online/privacy-policy.html">Privacy Policy</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Stocks Fundamentals Comparison</h1>
+
+    <strong class="section-title">Introduction</strong>
+    <p>
+      The Stocks Fundamentals Comparison Add-on provides fundamental ratios for selected stocks traded on NYSE or on Nasdaq.
+    </p>
+
+    <strong class="section-title">Features</strong>
+    <p>
+      Multiple stocks traded on NYSE or on Nasdaq can be selected.
+      The user can select which fundamental ratios he would like to be displayed. Each of the below fundamental ratios can be selected. They are grouped
+	  into common domains of interest:
+	  <ul>
+		<li>Margins: EBITDA margin, Net margin, Gross margin, Operating margin</li>
+		<li>Valuations: Price to earnings, Price to sales, Price to book, EV/EBIT, EV/Sales, EV/EBITDA</li>
+		<li>Liquidity: Debt to equity, Net debt/EBITDA, Current ratio, Quick ratio</li>
+		<li>Efficiency: Return on assets, Return on equity, Return on invested capital, Return on capital employed, Return on sales</li>
+		<li>Dividend: Dividend yield, Payout ratio</li>
+    </p>
+
+    <strong class="section-title">Availability</strong>
+    <p>
+      All features of the Add-on are available for free, immediately after installation. The Add-on can be called 50 times for free.
+      Additional Calls can be purchased on line directly from the Add-on side bar. The Add-on informs the user about the remaining number of Calls.
+    </p>
+
+    <strong class="section-title">Accountability</strong>
+    <p>
+      In case the user calls the Add-on but an error occurs, the Call will not be accounted and the remaining number of Calls will not be modified.
+    </p>
+
+    <strong class="section-title">'Stocks Fundamentals Comparison' Menu</strong>
+    <p>The 'Stocks Fundamentals Comparison' menu can be found in the Google Sheets™ menu under 'Extensions' → 'Add-ons'. It consists of four elements:</p>
+	<ul>
+	  <li>'Stocks Fundamentals Comparison' opens a side bar where the user can select which ratios to retrieve for which stocks.</li>
+      <li>'Purchase Calls' opens a side bar where the user can check how many Calls are available and select how many Calls to purchase.</li>
+      <li>'Help' opens this front window.</li>
+      <li>'About' opens a front window with details about the Add-on version and the author.</li>
+	</ul>
+    
+
+    <strong class="section-title">'Dividend Comparison' side bar</strong>
+    <p>
+      This sidebar is the main interface of the Add-on. Here the user can select which dividend Data to retrieve and how to display it.
+      The elements of this side bar are:
+	</p>
+	<ul>
+      <li>'Symbol list' to be filled with a comma separated ticker list of a securities traded on the Nasdaq Stock Exchange.</li>
+      <li>'Number of Years Backwards' with the amount of years for which to retrieve Cash Amounts.</li>
+      <li>'Comparison Type' where the user specifies how to compare the stocks.
+          'Absolute' shows the cash amount per share for each of the selected securities.
+          'Relative' calculates the difference in cash amount per share between two consecutive years, for each of the selected securities.
+      </li>
+      <li>'Put Data per event in a' 'Row' or 'Column'. Dividend Data of one captured dividend event are put in one row, if 'Row' is selected,
+        or are put in one column, if 'Column' is selected.
+      </li>
+      <li>If 'Insert Header' is requested, the Add-on will add an additional row (if 'Row' is seleted) or column (if 'Column' is selected) with
+        the name of the dividend Data. The order of dividend Data displayed per event is fixed and described in the next section.
+      </li>
+      <li>If 'Chart' is selected for 'Outputs', a chart will be inserted below the generated table. The chart horizontal axis will be the years. The chart vertical axis will be the Cash
+        Amount, if 'Absolute' was selected for 'Comparison Type'. It will be the relative change if 'Relative' was selected.
+      </li>
+	</ul>
+	<p>Press the 'Submit' button to call the Add-on, retrieve the dividend Data and display it starting from the current active cell
+       in the current sheet. The 'Reset' button deletes the content of the side bar. The 'Cancel' button closes the side bar without executing the Add-on.
+	</p>
+    
+    <strong class="section-title">'Purchase Calls' side bar</strong>
+    <p> This sidebar has two purposes: report the number of Calls available and purchase additional Add-on Calls.
+        In order to purchase additional Calls, select how many Calls to purchase. Note the price discount increases with the bigger purchase.
+        Press the 'Proceed' button that opens a new sidebar to select the method of payment. After selecting the method of Payment, a new PayPal front
+        window will open to perform the payment. After a successful transaction, a pop up window will inform about the number of Calls available.
+        The 'Dividend Data' side bar will be visible where the user can immediately retrieve new dividend Data using the newly purchased Calls.
+    </p>
+
+    <strong class="section-title">Error Messages</strong>
+    <p>Error messages are pop up windows that appear when no dividend Data was retrieved after pressing the 'Submit' button in the
+       'Dividend Data' side bar. The captured types of errors are:
+	</p>
+	<ul>
+      <li>Unrecognized symbols. None of the entered symbol is trading on the Nasdaq Stock Exchange.</li>
+      <li>No more function calls are available. Please purchase additional calls directly in the Google Sheets™ menu under Extensions → Add-ons → Dividend Info → Purchase Calls. </li>
+	</ul>
+    
+
+  </main>
+<footer style="text-align:center; padding: 1rem; color:#888; font-size: 0.9rem;">
+  <p>&copy; 2025 David Levy. All rights reserved.</p>
+  <p>
+	<a href="https://levyd01.online/privacy-policy.html" style="color:#888;">Privacy Policy</a> | 
+    <a href="https://levyd01.online/terms-of-service.html" style="color:#888;">Terms of Service</a>
+  </p>
+  <p style="margin-top: 1rem; font-size: 0.8rem; color: #777;">
+      Google Sheets™ is a trademark of Google LLC. This application is not endorsed by or affiliated with Google in any way.
+  </p>
+</footer>
+</body>
+</html>
