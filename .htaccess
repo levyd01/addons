@@ -3,3 +3,4 @@ RewriteEngine On
 RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www\.levyd01\.online [NC]
 RewriteRule ^(.*)$ https://levyd01.online/$1 [L,R=301]
+AddType application/xml .xml
