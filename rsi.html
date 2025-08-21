@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Stocks Fundamentals Comparison - Financial Add Ons</title>
+  <title>RSI - Financial Add ons</title>
   <style>
     /* Same base styles as index.html */
     * {
@@ -137,7 +137,6 @@
       color: #66ffff;
       outline: none;
     }
-    /* Responsive */
     @media (max-width: 600px) {
       main {
         margin: 3rem 1rem;
@@ -175,85 +174,27 @@
   </nav>
 
   <main>
-    <h1>Stocks Fundamentals Comparison</h1>
+    <h1>Multiple Stocks RSI</h1>
 
     <strong class="section-title">Introduction</strong>
     <p>
-      The Stocks Fundamentals Comparison Add-on provides fundamental ratios for selected stocks traded on NYSE or on Nasdaq.
+      This Google Sheets™ Add-on is useful for investors who want an overview of the RSI on multiple stocks. The RSI Add-on provides Bullish and Bearish RSI crossing events for multiple stocks traded in a single table.
     </p>
 
     <strong class="section-title">Features</strong>
     <p>
-      Multiple stocks traded on NYSE or on Nasdaq can be selected.
-      The user can select which fundamental ratios he would like to be displayed. Each of the below fundamental ratios can be selected. They are grouped
-	  into common domains of interest:
-	  <ul>
-		<li>Margins: EBITDA margin, Net margin, Gross margin, Operating margin</li>
-		<li>Valuations: Price to earnings, Price to sales, Price to book, EV/EBIT, EV/Sales, EV/EBITDA</li>
-		<li>Liquidity: Debt to equity, Net debt/EBITDA, Current ratio, Quick ratio</li>
-		<li>Efficiency: Return on assets, Return on equity, Return on invested capital, Return on capital employed, Return on sales</li>
-		<li>Dividend: Dividend yield, Payout ratio</li>
-	  </ul>
+      Any stock traded on US Stock Markets can be selected. The user can select the RSI unit interval as well as possibility to modify internal RSI parameters. The Add-on provides Bearish and Bullish RSI crossing. The user can select to display only simple information or detailed RSI and Signal values for each stock.
     </p>
 
-    <strong class="section-title">Availability</strong>
+    <strong class="section-title">Usage</strong>
     <p>
-      All features of the Add-on are available for free, immediately after installation. The Add-on can be called 50 times for free.
-      Additional Calls can be purchased on line directly from the Add-on side bar. The Add-on informs the user about the remaining number of Calls.
+      You can use this data as Buy/Strong Buy/Sell/Strong Sell signals or combine it with other indicators for decisions based on combined indicators.
     </p>
 
-    <strong class="section-title">Accountability</strong>
+    <strong class="section-title">Installation</strong>
     <p>
-      In case the user calls the Add-on but an error occurs, the Call will not be accounted and the remaining number of Calls will not be modified.
+      You can install it via this <a href="#" class="install-link" aria-label="Installation link for RSI Add-on">link</a>. Extensive help is available under 'Add-ons' &rarr; 'Multiple Stocks RSI' &rarr; 'Help'.
     </p>
-
-    <strong class="section-title">'Stocks Fundamentals Comparison' Menu</strong>
-    <p>The 'Stocks Fundamentals Comparison' menu can be found in the Google Sheets™ menu under 'Extensions' → 'Add-ons'. It consists of four elements:</p>
-	<ul>
-	  <li>'Stocks Fundamentals Comparison' opens a side bar where the user can select which ratios to retrieve for which stocks.</li>
-      <li>'Purchase Calls' opens a side bar where the user can check how many Calls are available and select how many Calls to purchase.</li>
-      <li>'Help' opens this front window.</li>
-      <li>'About' opens a front window with details about the Add-on version and the author.</li>
-	</ul>
-    </p>
-
-    <strong class="section-title">'Stocks Fundamentals Comparison' side bar</strong>
-    <p>
-      This sidebar is the main interface of the Add-on. Here the user can select which fundamental ratio to retrieve and for which stocks.
-      The elements of this side bar are:
-	</p>
-	<ul>
-      <li>'Symbol list' to be filled with a comma separated ticker list of a securities traded on the Nasdaq Stock Exchange or the NYSE.</li>
-      <li>'Margins' with the ratios EBITDA margin, Net margin, Gross margin and Operating margin</li>
-      <li>'Valuations' with the ratios Price to earnings, Price to sales, Price to book, EV/EBIT, EV/Sales and EV/EBITDA</li>
-      <li>'Liquidity' with the ratios Debt to equity, Net debt/EBITDA, Current ratio and Quick ratio</li>
-      <li>'Efficiency' with the ratios Return on assets, Return on equity, Return on invested capital, Return on capital employed and Return on sales</li>
-      <li>'Dividend' with the ratios Dividend yield and Payout ratio</li>
-	</ul>
-	<p>Press the 'Submit' button to call the Add-on, retrieve the fundamental ratios and display it starting from the current active cell
-       in the current sheet. The 'Reset' button deletes the content of the side bar. The 'Cancel' button closes the side bar without executing the Add-on.
-	</p>
-    
-    <strong class="section-title">'Purchase Calls' side bar</strong>
-    <p> This sidebar has two purposes: report the number of Calls available and purchase additional Add-on Calls.
-        In order to purchase additional Calls, select how many Calls to purchase. Note the price discount increases with the bigger purchase.
-        Press the 'Proceed' button that opens a new sidebar to select the method of payment. After selecting the method of Payment, a new PayPal front
-        window will open to perform the payment. After a successful transaction, a pop up window will inform about the number of Calls available.
-        The 'Stocks Fundamentals Comparison' side bar will be visible where the user can immediately retrieve new dividend Data using the newly purchased Calls.
-    </p>
-
-    <strong class="section-title">Error Messages</strong>
-    <p>Error messages are pop up windows that appear when no dividend Data was retrieved after pressing the 'Submit' button in the
-       'Stocks Fundamentals Comparison' side bar. The captured types of errors are:
-	</p>
-	<p>
-	<ul>
-      <li>Unrecognized symbols. None of the entered symbol is trading neither on the Nasdaq Stock Exchange nor on the NYSE.</li>
-      <li>No more function calls are available. Please purchase additional calls directly in the Google Sheets™ menu under Extensions → Add-ons → Stocks Fundamentals Comparison → Purchase Calls. </li>
-	</ul>
-	</p>
-    
-
   </main>
 <footer style="text-align:center; padding: 1rem; color:#888; font-size: 0.9rem;">
   <p>&copy; 2025 David Levy. All rights reserved.</p>
